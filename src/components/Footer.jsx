@@ -40,7 +40,7 @@ const Footer = () => {
           <p className=" text-center sm:text-start sm:w-[20vw] text-sm">The Fitness Icon Gym, where health and transformation converge. We pride ourselves on providing a cutting-edge fitness experience tailored to your individual journey. </p>
           </div>
           {/* <div className="flex gap-[34px] flex-wrap"> */}
-         <div className="div flex mt-10 sm:mt-1 items-center justify-start flex-wrap sm:gap-24 gap-[57px]">
+         <div className="div flex mt-2 sm:mt-1 pl-5 sm:pl-1 items-center sm:items-start justify-start flex-wrap sm:gap-24 gap-[52px]">
 
           <div className="part-2  sm:-mt-5 ">
             <h1 className="text-xl font-[600]">About</h1>
@@ -54,19 +54,19 @@ const Footer = () => {
            </div>
        
           </div>
-          <div className="part-1   sm:-mt-5  px-2 lg:px-0 ">
+          <div className="part-1 mt-7  sm:-mt-5  px-2 lg:px-0 ">
           <h1 className="sm:text-xl sm:pl-[60px]   text-sm font-[600] pb-5">Contact</h1>
            <div className="div w-[40vw] sm:pl-[60px]  sm:text-[17px] text-[12px] sm:w-[20vw]  pt-6J flex flex-col gap-3">
 
-           <h4>Email : <span></span> </h4>
+           <h4>Email : <span>icongym@gmail.com</span> </h4>
            <h4 className="text-[12px] sm:text-[15px]">Contact No : <span className="sm:text-sm text-[11px] ">9827566365</span> </h4>
-           <h4>Address : <span className="text-[10px] sm:text-[14px]  ">  GOKUL MARKET, MITTAL COLLEGE, PLOT NO 5, RAOD, Karond, Bhopal, Madhya Pradesh 462038</span></h4>
+           <h4>Address : <span className="text-[10px] sm:text-[14px]  ">  GOKUL MARKET, MITTAL COLLEGE, PLOT NO 5, Karond, Bhopal, Madhya Pradesh 462038</span></h4>
            </div>
             
             
           </div>
           <div className="part-3 ">
-            <h1 className="sm:text-xl  font-[600] -mt-6">Timings</h1>
+            <h1 className="sm:text-xl  font-[600] sm:-mt-5">Timings</h1>
             <div className="div text-[17px] pt-2 sm:-mt-1 sm:pt-6 flex flex-col gap-2">
               <h4 className="text-[12px] sm:text-[17px]">Morning : <span className="sm:text-sm text-[11px] ">6am to 12 noon</span> </h4>
               <h4 className="text-[12px] sm:text-[17px]">Evening : <span className="sm:text-sm text-[11px] ">6pm to 10pm</span> </h4>

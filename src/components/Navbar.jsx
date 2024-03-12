@@ -98,7 +98,7 @@ const Navbar = () => {
                   <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
 
                   <Link
-                    href="/about"
+                    href="/about" 
                     className={`block py-2 px-3 rounded md:bg-transparent md:p-0 hoverable-text ${
                       router.pathname === "/about" ? "active" : ""
                     }`}

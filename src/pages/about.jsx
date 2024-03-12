@@ -20,12 +20,12 @@ const About = () => {
       </div>
 
       <div className="flex w-[100vw] items-center  justify-center  text-sm md:text-md py-[10px]">
-        <div className="bg-[#18191B]  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[55vh] px-4 md:px-0">
+        <div className="bg-[#18191B] text-center sm:text-left   w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[55vh] px-4 md:px-0">
           <div className="w-full md:w-1/2">
             <p className="text-lg font-[700] text-[#FAB207] mb-4">
               THE FITNESS ICON GYM
             </p>
-            <p className="mb-4 w-[80vw]">
+            <p className="mb-4  w-[95vw] lg:w-[80vw]">
               Welcome to The Fitness Icon Gym, where health and transformation
               converge. We pride ourselves on providing a cutting-edge fitness
               experience tailored to your individual journey. With
@@ -38,9 +38,9 @@ const About = () => {
               Our Mission
             </p>
 
-             <div className="div w-[100vw] items-start gap-8  flex">
+             <div className="div w-[100vw] l items-start gap-8 sm:flex-col flex-col lg:flex-row flex">
 
-            <p className=" w-[53%] mb-4">
+            <p className=" w-[100%] pr-6 lg:w-[53%] mb-4">
               At The Fitness Icon Gym, our mission is to inspire and empower
               individuals to embrace a healthier lifestyle. We are committed to
               providing a welcoming space where fitness becomes a journey of
@@ -59,11 +59,11 @@ const About = () => {
 <p className="pt-5"> <span className="font-[600]">5. Transformative Wellness : </span>Instill a commitment to transformative wellness, creating positive life changes.</p>
          
             </p>
-            <div className="div rounded-lg overflow-hidden h-80 bg-red-500 lg:w-[29vw]">
+            <div className="div rounded-lg overflow-hidden w-[94vw] h-80 bg-red-500 lg:w-[29vw]">
             <img className=" object-cover h-full w-full" src="/images/_S0A1753.JPG" alt="mission" />
             </div>
              </div>
-            <div className="w-full md:w-1/2 flex flex-col">
+            <div className="w-full pt-5 md:w-1/2 flex flex-col">
               <p className="text-lg font-[700] text-[#FAB207] mb-4">Activity</p>
               <div className="flex flex-wrap  pb-7">
                 <div className="flex flex-col md:w-full gap-2">
@@ -72,7 +72,7 @@ const About = () => {
                   <BulletPoint>Group Fitness Classes</BulletPoint>
                   <BulletPoint>Functional Training</BulletPoint>
                 
-                  <BulletPoint>Flexibility and Mobility</BulletPoint>
+                 
                   <BulletPoint>Flexibility</BulletPoint>
                 </div>
               </div>

@@ -32,7 +32,7 @@ const Contact = () => {
                           Our Location
                         </h4>
                         <p className="lg:text-[14px]  text-[12px] text-body-color dark:text-dark-6">
-                        GOKUL MARKET, MITTAL COLLEGE, PLOT NO 5, RAOD, Karond, Bhopal, Madhya Pradesh 462038
+                        GOKUL MARKET, MITTAL COLLEGE, PLOT NO 5, Karond, Bhopal, Madhya Pradesh 462038
                         </p>
                       </div>
                     </div>

@@ -14,7 +14,7 @@ const Packages = () => {
 
       <div className="min-h-screen  bg-[#18191B] py-12 mt-[25px] md:mt-[100px] px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-white mb-8">
+          <h1 className="text-4xl pt-6 font-bold text-white mb-8">
             Membership Packages
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

@@ -122,10 +122,10 @@ const Tab = () => {
   // Define functional components for each tab content
   const T1Component = () => (
     <div className="flex  items-center justify-center w-[100%] ">
-      <div className="text-white flex items-center  justify-center lg:items-start lg:justify-start flex-wrap gap-0">
+      <div className="text-white flex items-center gap-4  justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
         {data1.map(({ src }, i) => {
           return (
-            <div className="w-[30vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
+            <div className="sm:w-[30vw] w-[42vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
                
               <img
                 src={src}
@@ -141,7 +141,7 @@ const Tab = () => {
       </div>
       {selectedImage && (
         <div className="fixed top-0   left-0 w-full h-screen z-40 flex items-center justify-center bg-black bg-opacity-75">
-          <div className="relative z-20 rounded overflow-hidden h-[50vh] w-fit  ">
+          <div className="relative z-20 rounded overflow-hidden max-w-[80vw] h-[50vh] sm:h-[60vh] sm:max-w-[50vw] w-fit  ">
             <div
               className="absolute z-40 top-0 right-0 cursor-pointer text-black h-fit w-fit p-3  text-3xl "
               onClick={closeImagePopup}
@@ -161,10 +161,10 @@ const Tab = () => {
   );
   const T2Component = () => (
     <div className="flex  items-center justify-center w-[100%] ">
-    <div className="text-white flex items-center justify-center lg:items-start lg:justify-start flex-wrap gap-0">
+    <div className="text-white flex items-center gap-4 justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
       {data.map(({ src }, i) => {
         return (
-          <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
+          <div className="sm:w-[30vw] w-[42vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
            
               <img
                 src={src}
@@ -178,9 +178,9 @@ const Tab = () => {
     </div>
     {selectedImage && (
         <div className="fixed top-0 left-0 w-full h-screen z-40 flex items-center justify-center bg-black bg-opacity-85">
-          <div className="relative z-20 rounded overflow-hidden h-[50vh] max-w-[80vw]  min-w-[30vw] ">
+          <div className="relative z-20 rounded overflow-hidden max-w-[80vw] h-[50vh] sm:h-[60vh] sm:max-w-[50vw]  min-w-[30vw] ">
             <div
-              className="absolute z-40 top-0 right-0 cursor-pointer text-white h-fit w-fit px-5 py-3  text-3xl "
+              className="absolute z-40 top-0 right-0 cursor-pointer text-black h-fit w-fit px-5 py-3  text-3xl "
               onClick={closeImagePopup}
             >
               &times;
