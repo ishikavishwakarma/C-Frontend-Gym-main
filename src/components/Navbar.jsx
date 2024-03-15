@@ -13,17 +13,35 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import TypingEffect from "./TypingEffect";
 import Lazy from "./Lazy";
+
 import WhatsAppButton from "./whatsup";
 import { CiClock2 } from "react-icons/ci";
 import LocationIcon from "./Location";
 import { MdEmail } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
+
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const router = useRouter();
 
   const [isVisible, setIsVisible] = useState(true);
-
+  const slideImages = [
+    {
+      // url:'https://images.unsplash.com/photo-1558659616-7742131dcfbb?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      url: "../../images/_54fbb8cd-2b3e-4482-b647-743e65c35bd1-removebg.png",
+      caption: "Sanatan Sandesh",
+    },
+    {
+      // url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+      url: "../../images/_54fbb8cd-2b3e-4482-b647-743e65c35bd1-removebg.png",
+      caption: "Sanatan Sandesh",
+    },
+    {
+      url: "../../images/_54fbb8cd-2b3e-4482-b647-743e65c35bd1-removebg.png",
+      caption: "Sanatan Sandesh",
+    },
+  ];
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -38,27 +56,27 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="text-white bg-[#18191B]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
-        <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative bg-[#000000] md:bg-[#18191B]  hidden md:flex">
+      <nav className="text-white nav bg-[#080B10]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
+        <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative bg-[#080B10] md:bg-[#080B10]  hidden md:flex">
           <div className="flex gap-[20px] ">
             <div className="flex items-center gap-1 text-sm">
               <MdOutlineLocalPhone className="text-[#FAB207]" />
-              <p className="md:hidden lg:inline">Call Now :</p>
-              <p className="text-sm">9827566365</p>
+            
+              <p className="text-sm">9131383718</p>
             </div>
             <div className="flex items-center gap-1 text-sm">
               <MdEmail className="text-[#FAB207]" />
-              <p className="md:hidden lg:inline">Email :</p>
+           
               <p className="text-sm"> 
-              icongym@gmail.com
+              fitnessiconny@gmail.com
               </p>
             </div>
             <LocationIcon></LocationIcon>
 
             <div className="flex items-center gap-1 text-sm">
-              <FaRegClock className="text-[#FAB207] font-semibold" />
-              <p className="md:hidden lg:inline"> Working Hours :</p>
-              <p className="text-sm">08:00am-9:00pm</p>
+              <IoLogoWhatsapp className="text-[#FAB207] font-semibold" />
+         
+              <p className="text-sm">9827566365</p>
             </div>
           </div>
           <div className="flex gap-4 text-white items-center justify-center   md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -67,10 +85,12 @@ const Navbar = () => {
             <WhatsAppButton></WhatsAppButton>
           </div>
         </div>
+       
+    
 
         <div className="bg-white w-full h-[1px] hidden md:block"></div>
 
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative bg-[#000000] md:bg-[#18191B]">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative bg-[#080B10] md:bg-[#080B10]">
           <Link
             href="/"
             className="flex items-center justify-center  space-x-3 rtl:space-x-reverse "
@@ -83,7 +103,7 @@ const Navbar = () => {
             <nav>
               <ul className="font-[400] md:flex flex-col text-lg text-white bg-transparent p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
                 <li className="flex items-center gap-2">
-                  <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
+                  <span className="w-[8px] h-[8px] inline-block bg-[#F3D302] rounded-full border-none"></span>
                   <Link
                     href="/"
                     className={`block py-2 px-3 rounded  md:bg-transparent md:p-0 hoverable-text ${
@@ -95,7 +115,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
+                  <span className="w-[8px] h-[8px] inline-block bg-[#F3D302] rounded-full border-none"></span>
 
                   <Link
                     href="/about" 
@@ -107,7 +127,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
+                  <span className="w-[8px] h-[8px] inline-block bg-[#F3D302] rounded-full border-none"></span>
 
                   <Link
                     href="/packages"
@@ -119,7 +139,7 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-[8px] h-[8px] inline-block bg-[#FAB207] rounded-full border-none"></span>
+                  <span className="w-[8px] h-[8px] inline-block bg-[#F3D302] rounded-full border-none"></span>
 
                   <Link
                     href="/contractUs"
@@ -199,6 +219,13 @@ const Navbar = () => {
             </div>
           </div>
         )}
+        <div className="bg-white w-full h-[.5px] hidden md:block"></div>
+
+            <div class="nav-1  mx-auto ">
+      <div class="marquee whitespace-nowrap overflow-hidden flex items-center">
+        <h1 className="text-white font-[500] text-sm">Morning : 6am to 11am  Evening : 6pm to 11pm</h1>
+      </div>
+    </div>
       </nav>
     </div>
   );

@@ -7,8 +7,8 @@ const Contact = () => {
     <>
       <Navbar></Navbar>
 
-      <div className="flex items-center justify-center bg-[#18191B] w-full">
-        <div className="px-[10px] md:px-[65px] bg-[#18191B] lg:h-fit overflow-hidden text-white mt-[50px] md:mt-[100px] max-w-screen-xl w-full  ">
+      <div className="flex items-center justify-center bg-[#080B10] w-full">
+        <div className="px-[10px] md:px-[65px] bg-[#080B10] lg:h-fit overflow-hidden text-white mt-[50px] md:mt-[100px] max-w-screen-xl w-full  ">
           <section className="relative z-10 overflow-hidden py-[45px] dark:bg-dark">
             <div className="container">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -914,7 +914,7 @@ const Contact = () => {
         ></iframe>
       </div>
 
-      <div className="bg-[#18191B]">
+      <div className="bg-[#080B10]">
         <Footer />
       </div>
     </>

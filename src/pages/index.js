@@ -17,7 +17,7 @@ export default function Home() {
   // max-w-screen-xl 
 
   return (
-    <div className="bg-[#18191B] text-white" >
+    <div className="bg-[#080B10] text-white" >
       <Navbar />
       <Carosal />
       <Programs />

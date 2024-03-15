@@ -55,14 +55,7 @@ const Tab = () => {
       src: "/images/Screenshot 2024-03-09 140824.png",
       type: "image",
     },
-    {
-      src: "/images/Screenshot 2024-03-09 140536.png",
-      type: "image",
-    },
-    {
-      src: "/images/Screenshot 2024-03-09 135740.png",
-      type: "image",
-    },
+   
   ];
 
 
@@ -99,15 +92,7 @@ const Tab = () => {
       src: "/images/Screenshot 2024-03-09 141147.png",
       type: "image",
     },
-    {
-      src: "/images/Screenshot 2024-03-09 141101.png",
-      type: "image",
-    },
     
-    {
-      src: "/images/Screenshot 2024-03-09 141005.png",
-      type: "image",
-    },
   ];
 
   const [selectedImage, setSelectedImage] = useState(null);
@@ -260,7 +245,7 @@ const Tab = () => {
           <div
             onClick={() => setCurrent(1)}
             className={`tabs  h-[40px] w-[150px] py-2 px-2 ${
-              current === 1 ? "bg-[#FAB207]" : ""
+              current === 1 ? "bg-[#F3D302]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
             Equipment
@@ -268,7 +253,7 @@ const Tab = () => {
           <div
             onClick={() => setCurrent(2)}
             className={`tabs h-[40px] w-[150px] py-2 px-2 ${
-              current === 2 ? "bg-[#FAB207]" : ""
+              current === 2 ? "bg-[#F3D302]" : ""
             } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
           >
              Workout 

@@ -16,7 +16,7 @@ const Reviews = () => {
   };
 
   return (
-    <div className="w-full h-[84vh] relative bg-[]">
+    <div className="w-full h-[84vh] relative ">
       {/* Background Image */}
       <div
         className="w-full h-[84vh] bg-cover bg-center absolute top-0"
@@ -37,7 +37,7 @@ const Reviews = () => {
             <div>
               <div className="flex items-center gap-2 pb-10  my-[25px]">
                 <div className="w-[20vw] h-[1px] bg-[#dadada8f]"></div>
-                <div className="w-[7px] h-[7px] bg-[#DCB800] border-none rounded-full"></div>
+                <div className="w-[7px] h-[7px] bg-[#F3D302] border-none rounded-full"></div>
                 <div className="w-[20vw] h-[1px] bg-[#dadada8f]"></div>
               </div>
             </div>

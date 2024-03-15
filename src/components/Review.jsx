@@ -85,7 +85,7 @@ const Review = () => {
                   sectionIndex === 1 ? "hidden w-[0px] md:flex" : "md:flex"
                 } py-[50px] px-[20px] bg-[#10111393] rounded-lg shadow-md flex justify-center items-start`}
               >
-                <div className="w-[200px] border-none  h-[40px] rounded bg-[#FAB207] flex items-center justify-center">
+                <div className="w-[200px] border-none  h-[40px] rounded bg-[#F3D302] flex items-center justify-center">
                   {/* <MdReviews className="text-lg font-semibold" /> */}
                   <i className="ri-store-2-fill"></i>
                 </div>
@@ -93,7 +93,7 @@ const Review = () => {
                   <p className={`text-white text-[13.5px] md:text-[14.5px] lg:text-[13.5px] `}>
                     {section.description}
                   </p>
-                  <h2 className="text-sm font-semibold text-[#FAB207] mt-3">
+                  <h2 className="text-sm font-semibold text-[#F3D302] mt-3">
                     {section.title}
                   </h2>
                 </div>

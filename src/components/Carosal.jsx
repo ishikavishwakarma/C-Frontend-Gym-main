@@ -77,11 +77,11 @@ const MainPage = () => {
                   
                 </p>
                 <h2 className="text-[35px] text-nowrap md:text-[70px] font-[200] mb-4 transition-transform transform  animateHeading flex gap-[20px] capitalize">
-                  <p>The</p>
-                  <div className="text-[#FAB207] font-[700]">
+                  <p>Nitin&apos;s</p>
+                  <div className="text-[#F3D302] font-[700]">
                     <Typewriter
                       options={{
-                        strings: ["Fitness Icon", "best gym"],
+                        strings: ["Fitness Icon", "Fitness Icon"],
                         autoStart: true,
                         loop: true,
                         delay: 75,

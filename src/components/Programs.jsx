@@ -3,20 +3,20 @@ import React from "react";
 const Programs = () => {
   return (
     <div className="flex items-center   justify-center min-h-[89vh] px-[20px] py-[20px]">
-      <div className="flex flex-col justify-between max-w-screen-xl w-full items-center bg-[#18191B]">
+      <div className="flex flex-col justify-between max-w-screen-xl w-full items-center bg-[#080B10]">
         <p className="text-[30px] font-thin uppercase pt-10">What We Do</p>
         <div>
           <div className="flex items-center  gap-2  my-[25px]">
             <div className="w-[30vw] h-[1px] bg-[#dadada8f]"></div>
-            <div className="w-[7px] h-[7px] bg-[#DCB800] border-none rounded-full"></div>
+            <div className="w-[7px] h-[7px] bg-[#F3D302] border-none rounded-full"></div>
             <div className="w-[30vw] h-[1px] bg-[#dadada8f]"></div>
           </div>
         </div>
 
         <div className="flex w-full items-center pt-10 justify-between flex-col lg:flex-row gap-[10px] lg:gap-0 md:px-2">
-          <div className="lg:w-[380px] bg-zinc-800 p-6 rounded w-fit flex flex-col gap-[10px]">
+          <div className="lg:w-[380px] bg-[#ccdaf71c] p-6 rounded w-fit flex flex-col gap-[10px]">
             <p>
-              <span className="text-[#FAB207] font-[500] "> Personalized </span>Fitness
+              <span className="text-[#F3D302] font-[500] "> Personalized </span>Fitness
             </p>
 
             <p className="text-[13.5px] font-extralight md:text-[13px]">
@@ -35,10 +35,10 @@ const Programs = () => {
             />
           </div>
 
-          <div className="lg:w-[380px] bg-zinc-800 p-6 rounded w-fit flex flex-col  gap-[10px]">
+          <div className="lg:w-[380px] bg-[#ccdaf71c] p-6 rounded w-fit flex flex-col  gap-[10px]">
             <p>
               {" "}
-              <span className="text-[#FAB207] font-[500]">Expert </span> Guidance and
+              <span className="text-[#F3D302] font-[500]">Expert </span> Guidance and
               Support
             </p>
             <p className="text-[13.5px] font-extralight md:text-[13px]">
@@ -57,10 +57,10 @@ const Programs = () => {
             />
           </div>
 
-          <div className="lg:w-[380px] bg-zinc-800 p-6 rounded w-fit flex flex-col  gap-[10px]">
+          <div className="lg:w-[380px] bg-[#ccdaf71c] p-6 rounded w-fit flex flex-col  gap-[10px]">
             <p>
               {" "}
-              <span className="text-[#FAB207] font-[500]">Building </span> a Supportive
+              <span className="text-[#F3D302] font-[500]">Building </span> a Supportive
               Community
             </p>
             <p className="text-[13.5px] font-extralight md:text-[13px]">

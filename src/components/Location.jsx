@@ -21,7 +21,7 @@ const LocationIcon = () => {
       <div className="flex items-center gap-1 text-sm">
         <IoLocationSharp className="text-[#FAB207]" />
         {/* <p>Location</p> */}
-        <p className="text-sm">Bhopal</p>
+        <p className="text-sm">Karond,Bhopal</p>
       </div>
     </div>
   );

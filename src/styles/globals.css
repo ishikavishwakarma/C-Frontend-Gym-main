@@ -30,7 +30,7 @@ html {
 
 
 .iconsOpacity:hover {
-  color: #FAB207;
+  color: #F3D302;
 }
 
 .cool-button {
@@ -89,7 +89,7 @@ html {
   position: absolute;
   width: 0;
   height: 2px;
-  background-color: #FAB207;
+  background-color: #F3D302;
   bottom: 0;
   left: 0%;
   
@@ -119,7 +119,7 @@ html {
   position: absolute;
   width: 100%;
   height: 2px;
-  background-color: #FAB207;
+  background-color: #F3D302;
   bottom: 0;
   left: 0%;
   transform: translateX(0%);
@@ -731,7 +731,25 @@ html {
   animation-duration: 1s;
   animation-timing-function: ease;
 }
+.marquee {
 
+  animation: marquee 14s linear infinite;
+
+  gap: 5px;
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+.nav-1 {
+  padding: 10px 5px;
+  overflow: hidden;
+}
 /* Define the keyframes for the scaling animation */
 @keyframes scaleAnimation {
   0% {
@@ -751,7 +769,7 @@ html {
 .sub-footer {
   /* height: 350px; */
   width: 100%;
-  background-color: #191919;
+  background-color: #080B10;
   display: flex;
   justify-content: space-between;
   gap: 80px;

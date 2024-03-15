@@ -1,29 +1,37 @@
+import Footer from "@/components/Footer";
 import Lazy from "@/components/Lazy";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import { FaRegSmile, FaStar, FaUsers } from "react-icons/fa";
-import { RiFacebookCircleFill, RiInstagramLine, RiLinkedinFill, RiTwitterLine } from "react-icons/ri";
+import {
+  RiFacebookCircleFill,
+  RiInstagramLine,
+  RiLinkedinFill,
+  RiTwitterLine,
+} from "react-icons/ri";
 
 const About = () => {
   return (
-    <div className="bg-[#18191B]  min-h-[100vh] relative">
+    <div className="bg-[#080B10]   min-h-[100vh] relative">
       <Navbar />
       <div
-        className="w-full flex items-center justify-center overflow-hidden text-white text-[50px] h-[40vh] md:h-[50vh] bg-cover bg-center absolute top-0"
+        className="w-full flex items-center  overflow-hidden text-white text-[50px] h-[40vh] md:h-[70vh] bg-cover bg-center absolute top-0"
         style={{
           backgroundImage: "url('/images/1.jpg')",
           backgroundAttachment: "fixed",
         }}
       >
-        <p className="mt-[80px] z-10">About Us</p>
+        <p className="mt-[160px] font-[700] text-base sm:text-5xl pl-10 w-[60vw] sm:w-[40vw] lg:pl-[8.5vw] text-left  z-10">
+          A FEW WORDS ABOUT THE CLUB
+        </p>
         <div className="w-full h-[84vh] absolute top-0 bg-black opacity-40"></div>
       </div>
 
-      <div className="flex w-[100vw] items-center  justify-center  text-sm md:text-md py-[10px]">
-        <div className="bg-[#18191B] text-center sm:text-left   w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[55vh] px-4 md:px-0">
-          <div className="w-full md:w-1/2">
+      <div className="flex w-[100vw] items-center h-fit sm:pb-1 pb-96 justify-center  text-sm md:text-md ">
+        <div className="bg-[#080B10] text-center sm:text-left py-10  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[75vh] px-4 md:px-0">
+          {/* <div className="w-full md:w-1/2">
             <p className="text-lg font-[700] text-[#FAB207] mb-4">
-              THE FITNESS ICON GYM
+            Discover Your Strength at Nitin's FITNESS ICON GYM
             </p>
             <p className="mb-4  w-[95vw] lg:w-[80vw]">
               Welcome to The Fitness Icon Gym, where health and transformation
@@ -71,31 +79,112 @@ const About = () => {
                   <BulletPoint>Cardiovascular Exercise</BulletPoint>
                   <BulletPoint>Group Fitness Classes</BulletPoint>
                   <BulletPoint>Functional Training</BulletPoint>
-                
-                 
                   <BulletPoint>Flexibility</BulletPoint>
                 </div>
               </div>
             </div>
+          </div> */}
+          <div className="div md:w-1/2 pt-1 sm:pt-14 flex gap-20 flex-col  w-full h-fit">
+            <div className="div flex h-full w-[100vw] flex-col pr-8 sm:flex-row sm:gap-20 items-center   ">
+              <div className="head">
+                <p className="lg:text-4xl text-xl w-full sm:w-[50vw] uppercase font-[900] lg:leading-[50px] text-[#F3D302] mb-7 lg:mb-10">
+                  Discover Your Strength at Nitin's FITNESS ICON GYM
+                </p>
+                <p className="mb-4 text-sm sm:text-lg w-full sm:w-[50vw]">
+                  Welcome to The Fitness Icon Gym, where health and
+                  transformation converge. We pride ourselves on providing a
+                  cutting-edge fitness experience tailored to your individual
+                  journey. With state-of-the-art equipment, expert trainers, and
+                  a vibrant community, we are committed to helping you achieve
+                  your fitness goals. Join us in this empowering environment,
+                  where every workout is a step towards a healthier, stronger,
+                  and more vibrant you.
+                </p>
+              </div>
+              <div className="div overflow-hidden sm:w-[94vw]  h-80 bg-[#080B10] lg:w-[28vw]">
+                <img
+                  className=" object-cover h-full w-full"
+                  src="/images/_S0A1754.JPG"
+                  alt="mission"
+                />
+              </div>
+            </div>
+            <div className="div flex py-1 sm:py-20 gap-[135vw] sm:gap-32 flex-col h-fit w-[100vw]">
+              <div className="div h-[60vh] flex flex-col sm:flex-row w-full pr-7 sm:pr-0 gap-10 sm:gap-0  sm:w-[83.5vw]">
+                <div className="div h-full relative w-full sm:w-1/2 ">
+                  <div className="div w-full h-2/3 ">
+                    <img
+                      src="/images/gym3_pic18.jpg"
+                      className="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
+                    <p className="text-center  leading-7">Experience unparalleled precision and performance with our top-of-the-line machines. Elevate your fitness journey and achieve your goals with the highest quality equipment at our gym.</p>
+                  </div>
+                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
+                    <h2 className="text-3xl text-center text-white font-[700]">HIGHEST QUALITY <br /> MACHINES</h2>
+                  </div>
+                </div>
+
+                <div className="div h-full  relative w-full sm:w-1/2 ">
+                  <div className="div w-full h-2/3 ">
+                    <img
+                      src="/images/gym3_pic19.jpg"
+                      className="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
+<p className="text-center leading-7">Revitalize your heart health and endurance with our cutting-edge cardiovascular exercise equipment. Energize your workout and push your limits with the latest in cardio technology at our gym.</p>
+                  </div>
+                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
+                    <h2 className="text-3xl text-center uppercase text-white font-[700]">Cardiovascular <br /> Exercise</h2>
+                  </div>
+                </div>
+              </div>
+             
+              <div className="div h-[60vh] flex flex-col sm:flex-row w-full pr-7 sm:pr-0 gap-10 sm:gap-0  sm:w-[83.5vw]">
+                <div className="div h-full relative w-full sm:w-1/2 ">
+                  <div className="div w-full h-2/3 ">
+                    <img
+                      src="/images/gym3_pic1.jpg"
+                      className="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
+<p className="text-center leading-7">Join the energy of our vibrant community and elevate your fitness journey with dynamic group fitness classes. Experience motivation, camaraderie, and results as you push towards your goals with our expert-led sessions.</p>
+
+                  </div>
+                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
+                    <h2 className="text-3xl text-center uppercase text-white font-[700]">Group Fitness <br /> Classes</h2>
+                  </div>
+                </div>
+
+                <div className="div h-full relative w-full sm:w-1/2 ">
+                  <div className="div w-full h-2/3 ">
+                    <img
+                      src="/images/gym3_pic2.jpg"
+                      className="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
+<p className="text-center leading-7">Maximize your potential with our dynamic functional training and flexibility programs. Elevate your agility, strength, and range of motion through personalized sessions tailored for peak performance.</p>
+
+                  </div>
+                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
+                    <h2 className="text-3xl uppercase text-center text-white font-[700]">Functional Training <br /> and flexibility</h2>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
           </div>
         </div>
       </div>
-            <div className="flex items-center justify-center bg-black">
-        <footer className="text-white py-4  max-w-screen-xl ">
-          <div className="flex w-full items-center justify-between   ">
-            <div className="md:-ml-[30px]">
-              <h1 className="uppercase">© 2024 Fitness Icon Gym</h1>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <RiFacebookCircleFill className="hover:text-[#FAB207] cursor-pointer" />
-              <RiTwitterLine className="hover:text-[#FAB207] cursor-pointer" />
-              <RiInstagramLine className="hover:text-[#FAB207] cursor-pointer" />
-              <RiLinkedinFill className="hover:text-[#FAB207] cursor-pointer" />
-            </div>
-          </div>
-        </footer>
-      </div>
+      <Footer />
     </div>
   );
 };
