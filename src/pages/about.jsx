@@ -29,66 +29,12 @@ const About = () => {
 
       <div className="flex w-[100vw] items-center h-fit sm:pb-1 pb-96 justify-center  text-sm md:text-md ">
         <div className="bg-[#080B10] text-center sm:text-left py-10  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[75vh] px-4 md:px-0">
-          {/* <div className="w-full md:w-1/2">
-            <p className="text-lg font-[700] text-[#FAB207] mb-4">
-            Discover Your Strength at Nitin's FITNESS ICON GYM
-            </p>
-            <p className="mb-4  w-[95vw] lg:w-[80vw]">
-              Welcome to The Fitness Icon Gym, where health and transformation
-              converge. We pride ourselves on providing a cutting-edge fitness
-              experience tailored to your individual journey. With
-              state-of-the-art equipment, expert trainers, and a vibrant
-              community, we are committed to helping you achieve your fitness
-              goals. Join us in this empowering environment, where every workout
-              is a step towards a healthier, stronger, and more vibrant you.
-            </p>
-            <p className="text-lg font-[700] text-[#FAB207] mb-4">
-              Our Mission
-            </p>
-
-             <div className="div w-[100vw] l items-start gap-8 sm:flex-col flex-col lg:flex-row flex">
-
-            <p className=" w-[100%] pr-6 lg:w-[53%] mb-4">
-              At The Fitness Icon Gym, our mission is to inspire and empower
-              individuals to embrace a healthier lifestyle. We are committed to
-              providing a welcoming space where fitness becomes a journey of
-              self-discovery and personal growth. Through cutting-edge
-              facilities, expert guidance, and a supportive community, we strive
-              to make every individual feel motivated and confident on their
-              path to optimal well-being. Our mission extends beyond physical
-              fitness; we aim to cultivate a culture of positivity, resilience,
-              and lifelong wellness. Join us as we work together to transform
-              lives and build a healthier, stronger community <br />
-
-            <p className="pt-5"> <span className="font-[600]">1. Inspiration for Health : </span> Inspire individuals to prioritize health and well-being for a positive lifestyle change.</p> 
-<p className="pt-5"> <span className="font-[600]">2. Holistic Fitness :</span>  Promote a holistic fitness approach, focusing on physical, mental, and emotional well-being.</p>
-<p className="pt-5"> <span className="font-[600]">3. Community Empowerment :</span>  Foster a supportive fitness community for empowerment and collective growth.</p>
-<p className="pt-5"> <span className="font-[600]">4. Guidance Towards Growth :</span>  Provide expert guidance for personal growth and reaching individual fitness potential.</p>
-<p className="pt-5"> <span className="font-[600]">5. Transformative Wellness : </span>Instill a commitment to transformative wellness, creating positive life changes.</p>
-         
-            </p>
-            <div className="div rounded-lg overflow-hidden w-[94vw] h-80 bg-red-500 lg:w-[29vw]">
-            <img className=" object-cover h-full w-full" src="/images/_S0A1753.JPG" alt="mission" />
-            </div>
-             </div>
-            <div className="w-full pt-5 md:w-1/2 flex flex-col">
-              <p className="text-lg font-[700] text-[#FAB207] mb-4">Activity</p>
-              <div className="flex flex-wrap  pb-7">
-                <div className="flex flex-col md:w-full gap-2">
-                  <BulletPoint>Strength Training</BulletPoint>
-                  <BulletPoint>Cardiovascular Exercise</BulletPoint>
-                  <BulletPoint>Group Fitness Classes</BulletPoint>
-                  <BulletPoint>Functional Training</BulletPoint>
-                  <BulletPoint>Flexibility</BulletPoint>
-                </div>
-              </div>
-            </div>
-          </div> */}
+          
           <div className="div md:w-1/2 pt-1 sm:pt-14 flex gap-20 flex-col  w-full h-fit">
             <div className="div flex h-full w-[100vw] flex-col pr-8 sm:flex-row sm:gap-20 items-center   ">
               <div className="head">
                 <p className="lg:text-4xl text-xl w-full sm:w-[50vw] uppercase font-[900] lg:leading-[50px] text-[#F3D302] mb-7 lg:mb-10">
-                  Discover Your Strength at Nitin's FITNESS ICON GYM
+                  Discover Your Strength at Nitin&apos; s FITNESS ICON GYM
                 </p>
                 <p className="mb-4 text-sm sm:text-lg w-full sm:w-[50vw]">
                   Welcome to The Fitness Icon Gym, where health and

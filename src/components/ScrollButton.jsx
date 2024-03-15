@@ -4,21 +4,6 @@ import { IoIosArrowUp } from "react-icons/io";
 const ScrollButton = () => {
   const [visible, setVisible] = useState(true); // Initially hidden
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     const isScrolledPastThreshold = window.document.body.scrollTop > 100;
-  //     setVisible(isScrolledPastThreshold);
-  //   };
-
-  //   window.addEventListener("scroll", handleScroll);
-
-  //   handleScroll();
-
-  //   return () => {
-  //     window.removeEventListener("scroll", handleScroll);
-  //   };
-  // }, []);
-
   const scrollTop = () => {
     window.document.body.scrollTo({
       top: 0,
