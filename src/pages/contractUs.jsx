@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import React from "react";
+import { MdOutlineLocalPhone } from "react-icons/md";
 import 'remixicon/fonts/remixicon.css'
 const Contact = () => {
   return (
@@ -13,7 +14,7 @@ const Contact = () => {
             <div className="container">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
                 <div className="w-full px-4 lg:w-1/2 xl:w-6/12">
-                  <div className="mb-12 px-[20px]  sm:px-[1px] pt-4 max-w-[570px] lg:mb-0">
+                  <div className="mb-12 px-[20px] pt-10  sm:px-[1px]  max-w-[570px] lg:mb-0">
                     <span className="mb-4 block xl:text-[40px] text-[32px] font-semibold text-primary">
                       Contact Us
                     </span>
@@ -43,10 +44,23 @@ const Contact = () => {
                       </div>
                       <div className="w-full">
                         <h4 className="mb-1 text-base sm:text-xl font-bold text-dark dark:text-white">
-                          Phone Number
+                          WhatsApp Number
                         </h4>
                         <p className="text-sm lg:text-[14px]  text-body-color dark:text-dark-6">
                         9827566365
+                        </p>
+                      </div>
+                    </div>
+                    <div className="mb-8 flex w-full max-w-[370px]">
+                      <div className="mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
+                      <MdOutlineLocalPhone className="text-3xl"  />
+                      </div>
+                      <div className="w-full">
+                        <h4 className="mb-1 text-base sm:text-xl font-bold text-dark dark:text-white">
+                          Phone Number
+                        </h4>
+                        <p className="text-sm lg:text-[14px]  text-body-color dark:text-dark-6">
+                        9131383718
                         </p>
                       </div>
                     </div>
@@ -60,13 +74,13 @@ const Contact = () => {
                           Email Address
                         </h4>
                         <p className="text-sm lg:text-[14px] text-body-color dark:text-dark-6">
-                                         icongym@gmail.com
+                        fitnessiconny@gmail.com
                         </p>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="w-full px-4 lg:w-1/2 xl:w-5/12">
+                <div className="w-full lg:pt-24 px-4 lg:w-1/2 xl:w-5/12">
                   <div className="relative rounded-lg bg-[#8a8a8e] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
                     <form>
                       <ContactInputBox
