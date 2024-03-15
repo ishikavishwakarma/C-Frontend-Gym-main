@@ -21,7 +21,7 @@ const About = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <p className="mt-[160px] font-[700] text-base sm:text-5xl pl-10 w-[60vw] sm:w-[40vw] lg:pl-[8.5vw] text-left  z-10">
+        <p className="mt-[160px] font-[700] lg:w-[70vw] xl:w-[50vw] text-base sm:text-5xl pl-10 w-[60vw] sm:w-[40vw] lg:pl-[8.5vw] text-left  z-10">
           A FEW WORDS ABOUT THE CLUB
         </p>
         <div className="w-full h-[84vh] absolute top-0 bg-black opacity-40"></div>
