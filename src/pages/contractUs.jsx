@@ -18,10 +18,10 @@ const Contact = () => {
                     <span className="mb-4 block xl:text-[40px] text-[32px] font-semibold text-primary">
                       Contact Us
                     </span>
-                    <h2 className="mb-6 text-base font-bold uppercase text-dark dark:text-white sm:text-[40px] xl:font-[400] lg:text-[36px] xl:text-[20px]">
-                      GET IN TOUCH WITH US
+                    <h2 className="mb-6 text-base  font-bold uppercase text-dark dark:text-white sm:text-[40px] xl:font-[400] lg:text-[30px] xl:text-[20px]">
+                      GET IN TOUCH WITH  US
                     </h2>
-                    <p className="mb-9 text-sm leading-5 sm:text-base leading-relaxed text-body-color dark:text-dark-6">
+                    <p className="mb-9 text-sm leading-5 sm:text-base  text-body-color dark:text-dark-6">
                     We&apos;re excited to hear from you! Whether you&apos;re ready to begin your fitness journey or have questions about our services, our team is here to help you every step of the way. Feel free to get in touch using the contact details provided below.
                     </p>
                     <div className="mb-8 flex w-full max-w-[370px]">

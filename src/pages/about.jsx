@@ -27,7 +27,7 @@ const About = () => {
         <div className="w-full h-[84vh] absolute top-0 bg-black opacity-40"></div>
       </div>
 
-      <div className="flex w-[100vw] items-center h-fit sm:pb-1 pb-96 justify-center  text-sm md:text-md ">
+      <div className="flex w-[100vw] lg:pl-40 xl:pl-0 items-center h-fit sm:pb-1  pb-96 justify-center  text-sm md:text-md ">
         <div className="bg-[#080B10] text-center sm:text-left py-10  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[75vh] px-4 md:px-0">
           
           <div className="div md:w-1/2 pt-1 sm:pt-14 flex gap-20 flex-col  w-full h-fit">
@@ -36,7 +36,7 @@ const About = () => {
                 <p className="lg:text-4xl text-xl w-full sm:w-[50vw] uppercase font-[900] lg:leading-[50px] text-[#F3D302] mb-7 lg:mb-10">
                   Discover Your Strength at Nitin&apos; s FITNESS ICON GYM
                 </p>
-                <p className="mb-4 text-sm sm:text-lg w-full sm:w-[50vw]">
+                <p className="mb-4 text-sm  sm:text-lg w-full sm:w-[50vw]">
                   Welcome to The Fitness Icon Gym, where health and
                   transformation converge. We pride ourselves on providing a
                   cutting-edge fitness experience tailored to your individual
@@ -65,7 +65,7 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
+                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
                     <p className="text-center  leading-7">Experience unparalleled precision and performance with our top-of-the-line machines. Elevate your fitness journey and achieve your goals with the highest quality equipment at our gym.</p>
                   </div>
                   <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
@@ -81,7 +81,7 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
+                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20 ">
 <p className="text-center leading-7">Revitalize your heart health and endurance with our cutting-edge cardiovascular exercise equipment. Energize your workout and push your limits with the latest in cardio technology at our gym.</p>
                   </div>
                   <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
@@ -99,7 +99,7 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
+                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
 <p className="text-center leading-7">Join the energy of our vibrant community and elevate your fitness journey with dynamic group fitness classes. Experience motivation, camaraderie, and results as you push towards your goals with our expert-led sessions.</p>
 
                   </div>
@@ -116,7 +116,7 @@ const About = () => {
                       alt=""
                     />
                   </div>
-                  <div className="div w-full h-1/3  flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
+                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
 <p className="text-center leading-7">Maximize your potential with our dynamic functional training and flexibility programs. Elevate your agility, strength, and range of motion through personalized sessions tailored for peak performance.</p>
 
                   </div>

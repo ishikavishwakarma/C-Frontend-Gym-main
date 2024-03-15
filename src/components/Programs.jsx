@@ -2,9 +2,9 @@ import React from "react";
 
 const Programs = () => {
   return (
-    <div className="flex items-center   justify-center min-h-[89vh] px-[20px] py-[20px]">
+    <div className="flex items-center lg:my-[-20px] xl:py-[30px] justify-center min-h-[89vh] px-[20px] py-[20px]">
       <div className="flex flex-col justify-between max-w-screen-xl w-full items-center bg-[#080B10]">
-        <p className="text-[30px] font-thin uppercase pt-10">What We Do</p>
+        <p className="text-[30px] font-thin uppercase  pt-10">What We Do</p>
         <div>
           <div className="flex items-center  gap-2  my-[25px]">
             <div className="w-[30vw] h-[1px] bg-[#dadada8f]"></div>
@@ -13,8 +13,8 @@ const Programs = () => {
           </div>
         </div>
 
-        <div className="flex w-full items-center pt-10 justify-between flex-col lg:flex-row gap-[10px] lg:gap-0 md:px-2">
-          <div className="lg:w-[380px] bg-[#ccdaf71c] p-6 rounded w-fit flex flex-col gap-[10px]">
+        <div className="flex w-full items-center pt-10 justify-between  flex-col lg:flex-row gap-[10px] lg:gap-6 md:px-2">
+          <div className="lg:w-[380px] bg-[#ccdaf71c]  p-6 rounded w-fit flex flex-col gap-[10px]">
             <p>
               <span className="text-[#F3D302] font-[500] "> Personalized </span>Fitness
             </p>

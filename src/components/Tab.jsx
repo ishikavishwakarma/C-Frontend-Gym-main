@@ -107,10 +107,10 @@ const Tab = () => {
   // Define functional components for each tab content
   const T1Component = () => (
     <div className="flex  items-center justify-center w-[100%] ">
-      <div className="text-white flex items-center gap-4  justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
+      <div className="text-white flex items-center gap-4 xl:gap-10 justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
         {data1.map(({ src }, i) => {
           return (
-            <div className="sm:w-[30vw] w-[42vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
+            <div className="sm:w-[30vw] w-[42vw] xl:w-[20vw] lg:h-[300px]   lg:w-[40vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
                
               <img
                 src={src}
@@ -146,10 +146,10 @@ const Tab = () => {
   );
   const T2Component = () => (
     <div className="flex  items-center justify-center w-[100%] ">
-    <div className="text-white flex items-center gap-4 justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
+    <div className="text-white flex items-center gap-4 xl:gap-10  justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
       {data.map(({ src }, i) => {
         return (
-          <div className="sm:w-[30vw] w-[42vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
+          <div className="sm:w-[30vw] w-[42vw]  xl:w-[20vw] lg:h-[300px]   lg:w-[40vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
            
               <img
                 src={src}
@@ -239,22 +239,22 @@ const Tab = () => {
   );
 
   return (
-    <div className=" items-center pt-20   md:items-start    min-h-[75vh] py-[20px] flex justify-center w-[100%]">
+    <div className=" items-center pt-20   md:items-start   min-h-[75vh]  py-[20px] flex justify-center w-[100%]">
       <div className="w-full h-full flex-col text-white  flex items-center">
         <div className="flex md:gap-[15px]  pb-[25px] text-white font-[700] flex-wrap items-center justify-center">
           <div
             onClick={() => setCurrent(1)}
-            className={`tabs  h-[40px] w-[150px] py-2 px-2 ${
+            className={`tabs xl:h-[70px] xl:w-[190px]  h-[40px] w-[150px] py-2 px-2 ${
               current === 1 ? "bg-[#F3D302]" : ""
-            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
+            } text-center cursor-pointer xl:text-lg text-sm align-center flex items-center justify-center`}
           >
             Equipment
           </div>
           <div
             onClick={() => setCurrent(2)}
-            className={`tabs h-[40px] w-[150px] py-2 px-2 ${
+            className={`tabs xl:h-[70px] xl:w-[190px]  h-[40px] w-[150px] py-2 px-2 ${
               current === 2 ? "bg-[#F3D302]" : ""
-            } text-center cursor-pointer text-sm align-center flex items-center justify-center`}
+            } text-center cursor-pointer xl:text-lg text-sm align-center flex items-center justify-center`}
           >
              Workout 
           </div>
@@ -275,7 +275,7 @@ const Tab = () => {
             Tab 4
           </div> */}
         </div>
-        <div className="w-full pb-10 pt-10">{renderComponent()}</div>
+        <div className="w-full pb-10 lg:pt-1 xl:pt-0 pt-10">{renderComponent()}</div>
       </div>
     </div>
   );

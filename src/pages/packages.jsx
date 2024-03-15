@@ -15,13 +15,13 @@ const Packages = () => {
 
       <Navbar></Navbar>
 
-      <div className="min-h-screen  bg-[#080B10] py-12 mt-[25px] md:mt-[100px] px-4">
+      <div className="min-h-screen lg:px-16 bg-[#080B10] py-12 mt-[25px] md:mt-[100px] px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="div py-10 lg:pb-16 pb-10 ">
             <h1 className="text-2xl pb-2 lg:text-4xl font-bold text-white lg:mb-8">
               Membership Packages
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 pt-5 sm:pt-10 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-5 sm:pt-10 xl:grid-cols-4 lg:grid-cols-2 gap-8">
               <PackageCard
                 title="1 Month Pack"
                 description="Get started on your fitness journey with access to our top-notch facilities and expert guidance for one month."
@@ -57,7 +57,7 @@ const Packages = () => {
             <h1 className="text-2xl pb-2 lg:text-4xl font-bold text-white lg:mb-8">
               Weight Gain and Weight Loss Packages
             </h1>
-            <div className="grid grid-cols-1 md:grid-cols-2 pt-5 sm:pt-10 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 pt-5 sm:pt-10 xl:grid-cols-4 lg:grid-cols-2 gap-8">
               <PackageCard
                  title="3kg Weight Gain Pack"
                  description="Achieve a 3kg weight gain with personalized training and nutritional guidance for a healthier you."
