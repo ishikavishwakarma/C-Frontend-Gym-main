@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Programs = () => {
@@ -28,9 +29,11 @@ const Programs = () => {
               that suits your lifestyle and preferences.
             </p>
 
-            <img
-              src="/images/Screenshot 2024-03-09 140856.png"
-              className="w-full h-[200px] rounded object-cover object-center"
+            <Image
+            width={600}
+            height={100}
+              src="/images/gym images/IMG_6382.png"
+              className="w-full h-[200px] rounded object-bottom object-cover"
               alt=""
             />
           </div>
@@ -50,7 +53,9 @@ const Programs = () => {
               are here to challenge you, inspire you, and celebrate your
               progress.
             </p>
-            <img
+            <Image
+            width={600}
+            height={100}
               src="/images/_S0A1753.JPG"
               className="w-full h-[200px] rounded object-cover object-center"
               alt=""
@@ -71,7 +76,9 @@ const Programs = () => {
               achievements. From group classes to social events, our gym
               provides opportunities for members to build meaningful
             </p>
-            <img
+            <Image
+            width={600}
+            height={100}
               src="/images/s3.jpg"
               className="w-full h-[200px] rounded object-cover object-center"
               alt=""

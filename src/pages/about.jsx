@@ -65,7 +65,7 @@ const About = () => {
                   <Image
                 height={100}
                 width={500}
-                      src="/images/gym images/IMG_6460.png"
+                      src="/images/gym images/IMG_6461.png"
                       className="h-full w-full object-cover"
                       alt=""
                     />

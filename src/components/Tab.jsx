@@ -24,7 +24,7 @@ const Tab = () => {
 
   var data1 = [
     {
-      src: "/images/gym images/IMG_6369.png",
+      src: "/images/gym images/IMG_6371.png",
       type: "image",
     },
     {
