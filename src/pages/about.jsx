@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Lazy from "@/components/Lazy";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
+import Image from "next/image";
 import { FaRegSmile, FaStar, FaUsers } from "react-icons/fa";
 import {
   RiFacebookCircleFill,
@@ -12,7 +13,7 @@ import {
 
 const About = () => {
   return (
-    <div className="bg-[#080B10]   min-h-[100vh] relative">
+    <div className="bg-[#0e141e]   min-h-[100vh] relative">
       <Navbar />
       <div
         className="w-full flex items-center  overflow-hidden text-white text-[50px] h-[40vh] md:h-[70vh] bg-cover bg-center absolute top-0"
@@ -28,7 +29,7 @@ const About = () => {
       </div>
 
       <div className="flex w-[100vw] lg:pl-40 xl:pl-0 items-center h-fit sm:pb-1  pb-96 justify-center  text-sm md:text-md ">
-        <div className="bg-[#080B10] text-center sm:text-left py-10  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[75vh] px-4 md:px-0">
+        <div className="bg-[#0e141e] text-center sm:text-left py-10  w-[100vw] text-white flex flex-col md:flex-row justify-between max-w-screen-xl gap-8 pt-[45vh] md:pt-[75vh] px-4 md:px-0">
           
           <div className="div md:w-1/2 pt-1 sm:pt-14 flex gap-20 flex-col  w-full h-fit">
             <div className="div flex h-full w-[100vw] flex-col pr-8 sm:flex-row sm:gap-20 items-center   ">
@@ -47,8 +48,10 @@ const About = () => {
                   and more vibrant you.
                 </p>
               </div>
-              <div className="div overflow-hidden sm:w-[94vw]  h-80 bg-[#080B10] lg:w-[28vw]">
-                <img
+              <div className="div overflow-hidden sm:w-[94vw]  h-80  lg:w-[28vw]">
+                <Image
+                height={100}
+                width={500}
                   className=" object-cover h-full w-full"
                   src="/images/_S0A1754.JPG"
                   alt="mission"
@@ -59,8 +62,10 @@ const About = () => {
               <div className="div h-[60vh] flex flex-col sm:flex-row w-full pr-7 sm:pr-0 gap-10 sm:gap-0  sm:w-[83.5vw]">
                 <div className="div h-full relative w-full sm:w-1/2 ">
                   <div className="div w-full h-2/3 ">
-                    <img
-                      src="/images/gym3_pic18.jpg"
+                  <Image
+                height={100}
+                width={500}
+                      src="/images/gym images/IMG_6460.png"
                       className="h-full w-full object-cover"
                       alt=""
                     />
@@ -75,7 +80,9 @@ const About = () => {
 
                 <div className="div h-full  relative w-full sm:w-1/2 ">
                   <div className="div w-full h-2/3 ">
-                    <img
+                  <Image
+                height={100}
+                width={500}
                       src="/images/gym3_pic19.jpg"
                       className="h-full w-full object-cover"
                       alt=""
@@ -91,10 +98,30 @@ const About = () => {
               </div>
              
               <div className="div h-[60vh] flex flex-col sm:flex-row w-full pr-7 sm:pr-0 gap-10 sm:gap-0  sm:w-[83.5vw]">
+              <div className="div h-full relative w-full sm:w-1/2 ">
+                  <div className="div w-full h-2/3 ">
+                  <Image
+                height={100}
+                width={500}
+                      src="/images/Screenshot 2024-03-09 140536.png"
+                      className="h-full w-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
+<p className="text-center leading-7">Maximize your potential with our dynamic functional training and flexibility programs. Elevate your agility, strength, and range of motion through personalized sessions tailored for peak performance.</p>
+
+                  </div>
+                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
+                    <h2 className="text-3xl uppercase text-center text-white font-[700]">Functional Training <br /> and flexibility</h2>
+                  </div>
+                </div>
                 <div className="div h-full relative w-full sm:w-1/2 ">
                   <div className="div w-full h-2/3 ">
-                    <img
-                      src="/images/gym3_pic1.jpg"
+                  <Image
+                height={100}
+                width={500}
+                      src="/images/gym images/IMG_6373.png"
                       className="h-full w-full object-cover"
                       alt=""
                     />
@@ -108,22 +135,7 @@ const About = () => {
                   </div>
                 </div>
 
-                <div className="div h-full relative w-full sm:w-1/2 ">
-                  <div className="div w-full h-2/3 ">
-                    <img
-                      src="/images/gym3_pic2.jpg"
-                      className="h-full w-full object-cover"
-                      alt=""
-                    />
-                  </div>
-                  <div className="div w-full h-1/3 lg:px-10 flex items-center justify-center px-1 pt-10 sm:pt-0 sm:px-20">
-<p className="text-center leading-7">Maximize your potential with our dynamic functional training and flexibility programs. Elevate your agility, strength, and range of motion through personalized sessions tailored for peak performance.</p>
-
-                  </div>
-                  <div className="w-full h-2/3 flex items-center justify-center  absolute top-0 bg-black opacity-40">
-                    <h2 className="text-3xl uppercase text-center text-white font-[700]">Functional Training <br /> and flexibility</h2>
-                  </div>
-                </div>
+               
               </div>
              
             </div>

@@ -20,6 +20,7 @@ import LocationIcon from "./Location";
 import { MdEmail } from "react-icons/md";
 import { FaRegClock } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
+import Image from "next/image";
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -56,8 +57,8 @@ const Navbar = () => {
 
   return (
     <div>
-      <nav className="text-white nav bg-[#080B10]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
-        <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative bg-[#080B10] md:bg-[#080B10]  hidden md:flex">
+      <nav className="text-white nav bg-[#111723]  w-full z-20 top-0 start-0 border-b   h-fit fixed">
+        <div className="max-w-screen-xl  flex-wrap items-center justify-between mx-auto p-4 relative  hidden md:flex">
           <div className="flex gap-[20px] ">
             <div className="flex items-center gap-1 text-sm">
               <MdOutlineLocalPhone className="text-[#FAB207]" />
@@ -90,12 +91,13 @@ const Navbar = () => {
 
         <div className="bg-white w-full h-[1px] hidden md:block"></div>
 
-        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative bg-[#080B10] md:bg-[#080B10]">
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 relative ">
           <Link
             href="/"
             className="flex items-center justify-center  space-x-3 rtl:space-x-reverse "
           >
-            <Lazy src="/logo.png" className="h-10 w-[80px] md:w-[89px] object-cover object-fit " alt="Logo" />
+            {/* <Lazy src="/fitness icon.png" className="h-16  md:w-[92px] object-cover  " alt="Logo" /> */}
+            <Image src={"/fitness icon.png"} width={100} height={90} className="h-16  md:w-[92px] object-cover  " alt="Logo" />
             {/* <h1 className="text-md uppercase font-[500]">fitness Icon Gym</h1> */}
           </Link>
 
@@ -169,14 +171,13 @@ const Navbar = () => {
           </div>
         </div>
         {navbar && (
-          <div className=" md:hidden bg-[#000000] text-white flex flex-col  px-[10px] py-[20px] text-sm gap-3 absolute w-full z-30  animateNav overflow-hidden">
+          <div className=" md:hidden bg-[#111723] text-white flex flex-col  px-[10px] py-[20px] text-sm gap-3 absolute w-full z-30  animateNav overflow-hidden">
             <div className=" flex flex-col h-[40px] px-[30px]  ">
               <div className="flex gap-1 hover:text-[#FAB207]  h-full hover:bg-[#111111] items-center ">
                 <Link href="/" className="px-[10px]">
                   Home
                 </Link>
               </div>
-
               <div className="w-[100%] h-fit flex items-center justify-center">
                 <p className="h-[.2px] opacity-[0.5] w-[100%] bg-[#dadada]"></p>
               </div>

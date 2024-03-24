@@ -11,14 +11,14 @@ const Packages = () => {
 
   return (
     <>
-    <div className="bg-[#080B10] ">
+    <div className="bg-[#0E141E] ">
 
       <Navbar></Navbar>
 
-      <div className="min-h-screen lg:px-16 bg-[#080B10] py-12 mt-[25px] md:mt-[100px] px-4">
+      <div className="min-h-screen lg:px-16 bg-[#0E141E] py-12 mt-[25px] md:mt-[100px] px-4">
         <div className="max-w-7xl mx-auto text-center">
           <div className="div py-10 lg:pb-16 pb-10 ">
-            <h1 className="text-2xl pb-2 lg:text-4xl font-bold text-white lg:mb-8">
+            <h1 className="text-2xl pb-2 lg:pt-7 lg:text-4xl font-bold text-white lg:mb-8">
               Membership Packages
             </h1>
             <div className="grid grid-cols-1 md:grid-cols-2 pt-5 sm:pt-10 xl:grid-cols-4 lg:grid-cols-2 gap-8">
@@ -26,7 +26,7 @@ const Packages = () => {
                 title="1 Month Pack"
                 description="Get started on your fitness journey with access to our top-notch facilities and expert guidance for one month."
                 price="₹1500*"
-                imageSrc="/images/Screenshot 2024-03-09 121725.png"
+                imageSrc="/images/gym images/IMG_6460.png"
                 id={1}
               />
               <PackageCard
@@ -40,7 +40,7 @@ const Packages = () => {
                 title="6 Month Pack"
                 description="Elevate your fitness journey with unlimited access, ongoing support, and exclusive discounts for six months."
                 price="₹6000*"
-                imageSrc="/images/Screenshot 2024-03-09 140824.png"
+                imageSrc="/images/gym images/IMG_6415.png"
                 id={3}
               />
               <PackageCard
@@ -62,28 +62,28 @@ const Packages = () => {
                  title="3kg Weight Gain Pack"
                  description="Achieve a 3kg weight gain with personalized training and nutritional guidance for a healthier you."
                  price="₹3000*"
-                 imageSrc="/images/Screenshot 2024-03-09 121725.png"
+                 imageSrc="/images/gym images/IMG_6440.png"
                  id={1}
               />
               <PackageCard
                  title="5kg Weight Gain Pack"
                  description="Step up your weight gain journey with our 5kg package - tailored workouts and expert advice for lasting results."
                  price="₹5000*"
-                 imageSrc="/images/Screenshot 2024-03-09 140536.png"
+                 imageSrc="/images/gym images/IMG_6370.png"
                  id={2}
               />
               <PackageCard
                  title="3kg Weight Loss Pack"
                  description="Embark on a journey to lose 3kg with our tailored weight loss exercises and personalized nutritional guidance."
                  price="₹3000*"
-                 imageSrc="/images/Screenshot 2024-03-09 121725.png"
+                 imageSrc="/images/gym images/IMG_6375.png"
                  id={3}
               />
               <PackageCard
                 title="5kg Weight Loss Pack"
                 description="Accelerate your weight loss with our 5kg package - expert guidance, targeted exercises, and personalized meal plans."
                 price="₹5000*"
-                imageSrc="/images/Screenshot 2024-03-09 140536.png"
+                imageSrc="/images/gym images/IMG_6385.png"
                 id={4}
               />
             </div>
@@ -146,7 +146,7 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
     <div className="bg-[#ffffffe4] rounded-lg shadow-md overflow-hidden">
       <Lazy
         height={""}
-        width={"100%"}
+        width={"120%"}
         src={imageSrc}
         alt={title}
         className="w-full h-48 object-cover"
@@ -160,7 +160,7 @@ const PackageCard = ({ title, description, price, imageSrc, id }) => {
         </p>
         <button
           onClick={(e) => router.push("/contractUs?id=" + id)}
-          className="mt-4 bg-[#18191B] text-white py-2 px-4  font-[400] rounded-md transition duration-300 hover:bg-[#18191bb8]"
+          className="mt-4 bg-[#131926] text-white py-2 px-4  font-[400] rounded-md transition duration-300 hover:bg-[#18191bb8]"
         >
           Book
         </button>

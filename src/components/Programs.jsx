@@ -2,8 +2,8 @@ import React from "react";
 
 const Programs = () => {
   return (
-    <div className="flex items-center lg:my-[-20px] xl:py-[30px] justify-center min-h-[89vh] px-[20px] py-[20px]">
-      <div className="flex flex-col justify-between max-w-screen-xl w-full items-center bg-[#080B10]">
+    <div className="flex items-center bg-[#111723] lg:my-[-20px] xl:py-[30px] justify-center min-h-[89vh] px-[20px] py-[20px]">
+      <div className="flex flex-col justify-between max-w-screen-xl w-full items-center ">
         <p className="text-[30px] font-thin uppercase  pt-10">What We Do</p>
         <div>
           <div className="flex items-center  gap-2  my-[25px]">

@@ -77,13 +77,13 @@ const Review = () => {
         style={{ transform: `translateX(-${activeSlide * 100}%)` }}
       >
         {mediaData.map((slide, index) => (
-          <div key={index} className="slide  flex gap-[30px] bg-[#0f10129c]">
+          <div key={index} className="slide  flex gap-[30px] bg-[#252c3a24]">
             {slide.sections.map((section, sectionIndex) => (
               <div
                 key={sectionIndex}
                 className={`w-full  md:w-1/2 flex items-start justify-center ${
                   sectionIndex === 1 ? "hidden w-[0px] md:flex" : "md:flex"
-                } py-[50px] px-[20px] bg-[#10111393] rounded-lg shadow-md flex justify-center items-start`}
+                } py-[50px] px-[20px] bg-[#252c3a41] rounded-lg shadow-md flex justify-center items-start`}
               >
                 <div className="w-[200px] border-none  h-[40px] rounded bg-[#F3D302] flex items-center justify-center">
                   {/* <MdReviews className="text-lg font-semibold" /> */}

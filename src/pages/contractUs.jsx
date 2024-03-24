@@ -1,15 +1,60 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import React from "react";
+import React, { useState } from "react";
 import { MdOutlineLocalPhone } from "react-icons/md";
+import { toast } from "react-toastify";
 import 'remixicon/fonts/remixicon.css'
 const Contact = () => {
+  const initValues = { name: "", email: "",phone: "", message: "" };
+
+const initState = { isLoading: false, error: "", values: initValues };
+const [state, setState] = useState(initState);
+const [touched, setTouched] = useState({});
+
+const { values, isLoading, error } = state;
+
+const onBlur = ({ target }) =>
+  setTouched((prev) => ({ ...prev, [target.name]: true }));
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+ 
+    const onSubmit = async () => {
+      setState((prev) => ({
+        ...prev,
+        isLoading: true,
+      }));
+      try {
+        await sendContactForm(values);
+        setTouched({});
+        setState(initState);
+        toast({
+          title: "Message sent.",
+          status: "success",
+          duration: 2000,
+          position: "top",
+        });
+      } catch (error) {
+        setState((prev) => ({
+          ...prev,
+          isLoading: false,
+          error: error.message,
+        }));
+      }
+    };
   return (
     <>
       <Navbar></Navbar>
 
-      <div className="flex items-center justify-center bg-[#080B10] w-full">
-        <div className="px-[10px] md:px-[65px] bg-[#080B10] lg:h-fit overflow-hidden text-white mt-[50px] md:mt-[100px] max-w-screen-xl w-full  ">
+      <div className="flex items-center justify-center bg-[#111723] w-full">
+        <div className="px-[10px] md:px-[65px] bg-[#111723] lg:h-fit overflow-hidden text-white mt-[50px] md:mt-[100px] max-w-screen-xl w-full  ">
           <section className="relative z-10 overflow-hidden py-[45px] dark:bg-dark">
             <div className="container">
               <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -82,28 +127,40 @@ const Contact = () => {
                 </div>
                 <div className="w-full lg:pt-24 px-4 lg:w-1/2 xl:w-5/12">
                   <div className="relative rounded-lg bg-[#8a8a8e] p-8 shadow-lg dark:bg-dark-2 sm:p-12">
-                    <form>
+                    <form onSubmit={onSubmit}>
                       <ContactInputBox
                         type="text"
                         name="name"
+                        value={values.name}
+                        onChange={handleChange}
+                        onBlur={onBlur}
                         placeholder="Your Name"
                       />
                       <ContactInputBox
                         type="text"
                         name="email"
+                        value={values.email}
+                        onChange={handleChange}
+                        onBlur={onBlur}
                         placeholder="Your Email"
                       />
                       <ContactInputBox
                         type="text"
+                        value={values.phone}
+                        onChange={handleChange}
                         name="phone"
                         placeholder="Your Phone"
                       />
                       <ContactTextArea
                         row="6"
+                        value={values.message}
+                        onChange={handleChange}
+                        onBlur={onBlur}
                         placeholder="Your Message"
-                        name="details"
+                        name="message"
                         defaultValue=""
                       />
+                      
                       <div>
                         <button
                           type="submit"

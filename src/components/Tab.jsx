@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Lazy from "./Lazy";
+import Image from "next/image";
 
 const Tab = () => {
   const [current, setCurrent] = useState(1);
@@ -23,36 +24,36 @@ const Tab = () => {
 
   var data1 = [
     {
-      src: "/images/Screenshot 2024-03-09 143131.png",
+      src: "/images/gym images/IMG_6369.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 141101.png",
+      src: "/images/gym images/IMG_6445.png",
       type: "image",
     },
     
-    {
-      src: "/images/Screenshot 2024-03-09 141147.png",
-      type: "image",
-    },
-    {
-      src: "/images/Screenshot 2024-03-09 141005.png",
-      type: "image",
-    },
-    {
-      src: "/images/Screenshot 2024-03-09 143026.png",
-      type: "image",
-    },
     {
       src: "/images/Screenshot 2024-03-09 140927.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140856.png",
+      src: "/images/gym images/IMG_6447.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140824.png",
+      src: "/images/gym images/IMG_6444.png",
+      type: "image",
+    },
+    {
+      src: "/images/gym images/IMG_6450.png",
+      type: "image",
+    },
+    {
+      src: "/images/gym images/IMG_6448.png",
+      type: "image",
+    },
+    {
+      src: "/images/gym images/IMG_6385.png",
       type: "image",
     },
    
@@ -61,35 +62,36 @@ const Tab = () => {
 
   var data = [
     {
-      src: "/images/Screenshot 2024-03-09 143026.png",
+      
+      src: "/images/gym images/IMG_6461.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140927.png",
+      src: "/images/gym images/IMG_6382.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140856.png",
+      src: "/images/gym images/IMG_6399.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140824.png",
+      src: "/images/gym images/IMG_6463.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 140536.png",
+      src: "/images/gym images/IMG_6425.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 135740.png",
+      src: "/images/gym images/IMG_6418.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 143131.png",
+      src: "/images/gym images/IMG_6403.png",
       type: "image",
     },
     {
-      src: "/images/Screenshot 2024-03-09 141147.png",
+      src: "/images/gym images/IMG_6370.png",
       type: "image",
     },
     
@@ -106,16 +108,18 @@ const Tab = () => {
   };
   // Define functional components for each tab content
   const T1Component = () => (
-    <div className="flex  items-center justify-center w-[100%] ">
-      <div className="text-white flex items-center gap-4 xl:gap-10 justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
+    <div className="flex  items-center bg-[#111723] justify-center w-[100%] ">
+      <div className="text-white flex  items-center mt-10 lg:gap-5 xl:p-20 gap-4 xl:gap-10 lg:p-10 justify-center lg:items-start lg:justify-start flex-wrap sm:gap-11 sm:p-20">
         {data1.map(({ src }, i) => {
           return (
-            <div className="sm:w-[30vw] w-[42vw] xl:w-[20vw] lg:h-[300px]   lg:w-[40vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
+            <div className="sm:w-[30vw] w-[42vw]  xl:w-[20vw] lg:h-[320px]   lg:w-[45vw]  md:w-[20vw] h-[200px]  overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
                
-              <img
-                src={src}
+              <Image
+           
+width={700} 
+height={100}               src={src}
                 alt={`Image ${i}`}
-                className="border-2 rounded transition-all border-[#18191B] border-solid xl:border-4 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
+                className=" rounded transition-all  xl:border-2 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
               />
           
               
@@ -125,7 +129,7 @@ const Tab = () => {
         })}
       </div>
       {selectedImage && (
-        <div className="fixed top-0   left-0 w-full h-screen z-40 flex items-center justify-center bg-black bg-opacity-75">
+        <div className="fixed top-0   left-0 w-full h-screen z-40 flex items-center justify-center bg-[#111723] bg-opacity-75">
           <div className="relative z-20 rounded overflow-hidden max-w-[80vw] h-[50vh] sm:h-[60vh] sm:max-w-[50vw] w-fit  ">
             <div
               className="absolute z-40 top-0 right-0 cursor-pointer text-black h-fit w-fit p-3  text-3xl "
@@ -133,10 +137,13 @@ const Tab = () => {
             >
               &times;
             </div>
-            <img
+            <Image
+           
+           width={500} 
+           height={100}
               src={selectedImage}
               alt="Popup"
-              className="w-full z-50 h-full object-cover"
+              className="w-96 z-50 h-full object-cover"
             />
           
           </div>
@@ -151,10 +158,13 @@ const Tab = () => {
         return (
           <div className="sm:w-[30vw] w-[42vw]  xl:w-[20vw] lg:h-[300px]   lg:w-[40vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
            
-              <img
+           <Image
+           
+           width={700} 
+           height={100} 
                 src={src}
                 alt={`Image ${i}`}
-                className="border-2 rounded transition-all border-[#18191B] border-solid xl:border-4 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
+                className=" rounded transition-all   xl:border-2 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
               />
             
           </div>
@@ -171,7 +181,7 @@ const Tab = () => {
               &times;
             </div>
             
-            <img
+            <Image
               src={selectedImage}
               alt="Popup"
               className="w-full z-50 h-full object-cover"
@@ -192,7 +202,7 @@ const Tab = () => {
              <img
                src={src}
                alt={`Image ${i}`}
-               className="border-2 rounded transition-all border-[#18191B] border-solid xl:border-4 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
+               className="border-2 rounded transition-all border-[#111723] border-solid xl:border-4 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
              />
            
          </div>
@@ -229,7 +239,7 @@ const Tab = () => {
               <Lazy
                 style={{ transition: "all 2s ease-in-out" }}
                 src={src}
-                className="border-2 rounded  border-[#18191B]  border-solid xl:border-4 w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
+                className="border-2 rounded  border-[#18191B]  border-solid xl:border-2 w-[30vw] md:w-[20vw] object-cover object-center h-[200px] hover:scale-[1.2] animateTabImage "
               ></Lazy>
             </div>
           );
@@ -239,7 +249,7 @@ const Tab = () => {
   );
 
   return (
-    <div className=" items-center pt-20   md:items-start   min-h-[75vh]  py-[20px] flex justify-center w-[100%]">
+    <div className=" items-center pt-20 bg-[#111723]  md:items-start   min-h-[75vh]  py-[20px] flex justify-center w-[100%]">
       <div className="w-full h-full flex-col text-white  flex items-center">
         <div className="flex md:gap-[15px]  pb-[25px] text-white font-[700] flex-wrap items-center justify-center">
           <div

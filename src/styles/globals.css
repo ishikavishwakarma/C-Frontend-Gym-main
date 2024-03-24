@@ -313,7 +313,7 @@ html {
   width: 100%;
   height: 200px;
   /* Adjust height as needed */
-  background-color: #222;
+  /* background-color: #222; */
   /* Background color of the container */
   display: flex;
   justify-content: center;
@@ -769,7 +769,7 @@ html {
 .sub-footer {
   /* height: 350px; */
   width: 100%;
-  background-color: #080B10;
+  
   display: flex;
   justify-content: space-between;
   gap: 80px;
@@ -791,7 +791,7 @@ html {
 }
 
 footer {
-  background-color: #000;
+  /* background-color: #000; */
   width: 100%;
   padding: 20px 40px;
   display: flex;

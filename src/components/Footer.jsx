@@ -14,16 +14,16 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div className="bg-[#080B10]">
-      <div className="flex bg-[#080B10] lg:pl-7  items-center pt-6 justify-center">
-        <div className="sub-footer   bg-[#080B10] justify-between flex-col flex w-full sm:flex-row  max-w-screen-xl">
-          <div className="extra bg-[#080B10] lg:items-start  justify-center md:items-center lg:w-96 md:w-full items-center sm:items-start flex gap-4 flex-col w-full sm:w-60  h-fit ">
-            <Lazy src="/logo.png" className="h-20   w-[150px] md:w-[150px] object-cover object-fit " alt="Logo" />
+    <div className="bg-[#131926] h-full w-full">
+      <div className="flex  lg:pl-7 items-center pt-6 justify-center">
+        <div className="sub-footer  justify-between flex-col flex w-full sm:flex-row  max-w-screen-xl">
+          <div className="extra  lg:items-start  justify-center md:items-center lg:w-96 md:w-full items-center sm:items-start flex gap-4 flex-col w-full sm:w-60  h-fit ">
+            <Lazy src="/fitness icon.png" className="h-24   w-[150px] md:w-[150px] object-cover object-fit " alt="Logo" />
             
           <p className=" text-center md:text-center lg:text-start lg:w-[20vw] md:w-[50vw] sm:text-start sm:w-[20vw] text-sm">The Fitness Icon Gym, where health and transformation converge. We pride ourselves on providing a cutting-edge fitness experience tailored to your individual journey. </p>
           </div>
-          {/* <div className="flex gap-[34px] flex-wrap"> */}
-         <div className="div flex mt-2 lg:pt-5 md:gap-10 lg:justify-start lg:items-start lg:gap-5 md:w-screen md:justify-center sm:mt-1 pl-5 sm:pl-1 sm:items-start justify-start flex-wrap sm:gap-24 gap-[52px]">
+          
+         <div className="div flex  mt-2 lg:pt-5 md:gap-10 lg:justify-start lg:items-start lg:gap-5 md:w-screen md:justify-center sm:mt-1 pl-5 sm:pl-1 sm:items-start justify-start flex-wrap sm:gap-24 gap-[52px]">
 
           <div className="part-2 -mt-4  sm:-mt-5 ">
             <h1 className="text-xl font-[600]">Site Map</h1>
@@ -56,14 +56,14 @@ const Footer = () => {
           </div>
           </div>
           </div>
-          {/* </div> */}
+          
           
           
         </div>
       </div>
 
-      <div className="flex items-center justify-center bg-[#080b10c0]">
-        <footer className="text-white py-4 bg-[#080b10ae] max-w-screen-xl ">
+      <div className="flex items-center justify-center ">
+        <footer className="text-white py-4  max-w-screen-xl ">
           <div className="flex w-full items-center justify-between   ">
             <div className="md:-ml-[30px]">
               <h1 className="uppercase">© 2024 Fitness Icon Gym</h1>
