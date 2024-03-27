@@ -199,7 +199,10 @@ height={100}               src={src}
         return (
           <div className="w-[30vw]  md:w-[20vw] h-[200px] overflow-hidden" key={i} onClick={() => openImagePopup(src)}>
          
-             <img
+         <Image
+           
+           width={700} 
+           height={100} 
                src={src}
                alt={`Image ${i}`}
                className="border-2 rounded transition-all border-[#111723] border-solid xl:border-4 w-full h-full object-cover object-center hover:scale-[1.2] animateTabImage"
@@ -219,7 +222,10 @@ height={100}               src={src}
               &times;
             </div>
            
-            <img
+            <Image
+           
+           width={700} 
+           height={100} 
               src={selectedImage}
               alt="Popup"
               className="w-full z-50 h-full object-cover"
