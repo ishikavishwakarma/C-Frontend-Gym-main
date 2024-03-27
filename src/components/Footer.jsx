@@ -18,7 +18,7 @@ const Footer = () => {
       <div className="flex  lg:pl-7 items-center pt-6 justify-center">
         <div className="sub-footer  justify-between flex-col flex w-full sm:flex-row  max-w-screen-xl">
           <div className="extra  lg:items-start  justify-center md:items-center lg:w-96 md:w-full items-center sm:items-start flex gap-4 flex-col w-full sm:w-60  h-fit ">
-            <Lazy src="/fitness icon.png" className="h-24   w-[150px] md:w-[150px] object-cover object-fit " alt="Logo" />
+            <Lazy src="/gymicon.png" className="h-24   w-[150px] md:w-[150px] object-cover object-fit " alt="Logo" />
             
           <p className=" text-center md:text-center lg:text-start lg:w-[20vw] md:w-[50vw] sm:text-start sm:w-[20vw] text-sm">The Fitness Icon Gym, where health and transformation converge. We pride ourselves on providing a cutting-edge fitness experience tailored to your individual journey. </p>
           </div>
