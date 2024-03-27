@@ -5,7 +5,7 @@ const nextConfig = {
     // Add custom webpack configurations here
 
     // Example: Disable hot module replacement (HMR)
-    if (dev ) {
+    if (dev && config.devServer ) {
       config.devServer.hot = false;
     }
 
