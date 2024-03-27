@@ -75,7 +75,7 @@ const Tab = () => {
       type: "image",
     },
     {
-      src: "/images/gym images/IMG_6463.png",
+      src: "/images/gym images/IMG_6467.png",
       type: "image",
     },
     {
