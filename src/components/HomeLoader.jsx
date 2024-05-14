@@ -1,6 +1,5 @@
 // Loader.js
-
-import React from "react";
+// import React from "react";
 import { TailSpin } from "react-loader-spinner";
 
 const Loader = () => {
@@ -15,7 +14,8 @@ const Loader = () => {
         radius="1"
         wrapperStyle={{}}
         wrapperClass=""
-      />
+     
+     />
       <p className="text-white text-xl font-semibold mt-[20px]">
         Loading...
       </p>

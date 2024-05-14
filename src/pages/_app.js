@@ -3,8 +3,8 @@ import HomeLoader from '@/components/HomeLoader';
 import LoadingPage from '@/components/LoadingPage';
 import ScrollToTopButton from '@/components/ScrollButton';
 import LoadingAnimation from '@/components/motion';// corrected import
-import '@/styles/globals.css';
-import { Router } from 'next/router';
+import '@/styles/globals.css';          
+import { Router } from 'next/router';                                        
 import { useEffect, useState } from 'react';
 
 export default function App({ Component, pageProps }) {
@@ -27,8 +27,6 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     setLoading(false);
   }, []);
-
-
   return (
     <>
       {/* {!isRevealTriggered && <LoadingAnimation />} */}

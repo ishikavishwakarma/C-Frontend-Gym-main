@@ -15,7 +15,6 @@ import Reviews from "@/components/Reviews";
 
 export default function Home() {
   // max-w-screen-xl 
-
   return (
     <div className=" text-white" >
       <Navbar />
